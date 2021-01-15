@@ -1,0 +1,27 @@
+<main class="container">
+  <div class="page-header px-3 py-3 mx-auto text-center">
+    <h1 class="display-4">Assignment Week 02</h1>
+    <p class="lead">In this Angular Bootcamp January 2021, we are going to learn how to make professional web application development.
+      We will start from the beginning level, but we will take our level at any enterprise level software development
+      knowledge.</p>
+  </div>
+
+  <div class="container">
+    <h4 class="text-center">All Student</h4>
+    <div class="card-deck">
+      <div class="card shadow-sm mb-4" *ngFor="let card of studentData">
+        <app-card [data]="card"></app-card>
+      </div>
+    </div>
+  </div>
+
+  <div class="container p-4">
+    <h4 class="text-center">All Teachers</h4>
+    <div class="card-deck">
+      <div class="card shadow-sm mb-4" *ngFor="let card of teacherData">
+        <app-card [data]="card"></app-card>
+      </div>
+    </div>
+  </div>
+
+</main>
